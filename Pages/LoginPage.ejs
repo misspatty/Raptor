@@ -1,0 +1,126 @@
+<!doctype html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/LoginPage.css"> 
+        <title>Account</title>
+    </head>
+
+<body>
+
+    <a href="https://www.kifss.co.uk/">
+    <img id = "LogoSmall" src="img/KifssLogoSmall.png" alt="KIFSS logo">
+    </a>
+    <!-------------------------------------------------------------------------------------------------------------->
+    <div id = "LeftBox" class="mainBox">
+    
+        <!----------------------------------------------------------------------->
+        
+        <div id="Create" class="Container">
+            <p style="text-transform:uppercase;">Sign Up</p>
+        </div>
+        <!----------------------------------------------------------------------->
+        <div id="AccountCreated" class="Message">
+            <p class="messageText">Successfully created!<br>Check your email<br>to confirm.</p>
+        </div>
+        <!----------------------------------------------------------------------->
+        <div id="Signup" class="Forms">
+                <input class="createForms" type="text" placeholder="Forename:" name="fname" required pattern="\S+">
+                <input class="createForms" type="text" placeholder="Surname:" name="lname" required pattern="\S+">
+                <input class="createForms" type="email" placeholder="Email:" name="email" required pattern="\S+"/>
+                <input class="createForms" type="password" placeholder="Password:" name="pass" required pattern="\S+"/>
+                <label for="role">Role : </label>
+                <select class="createForms">
+                    <option value="" required pattern="\S+" disabled selected>Select role...</option>
+                    <option value="admin">Administrator</option>
+                    <option value="employ">Employee</option>
+                    <option value="client">Client</option>
+                </select>
+        </div>
+
+        <div id="PassHint" class="Hint"></div>
+        <div id="PassHintBox" class="HintBox">
+            <ul>
+                <li class="HintList">Minimum 8 characters</li>
+                <li class="HintList">At least one upper case</li>
+                <li class="HintList">At least one lower case</li>
+                <li class="HintList">At least one number</li>
+            </ul>
+        </div>
+        <!----------------------------------------------------------------------->
+        <button id="SubmitCreate" class="submit" type="submit" style="text-transform:uppercase;">Create</button>
+        <!----------------------------------------------------------------------->
+        <!----------------------------------------------------------------------->
+    </div>
+
+    <!-------------------------------------------------------------------------------------------------------------->
+    <div id = "RightBox" class="mainBox">
+        
+        <!----------------------------------------------------------------------->
+
+        <div id="Enter"class="Container">
+            <p style="text-transform:uppercase;" >Log In</p>
+        </div>
+        <!----------------------------------------------------------------------->
+        <div id="LoggedIn" class="Message">
+            <p  class="messageText">You are logged in!<br></p>
+            <!------------------------------------------------------------------->
+            <div>
+                <a id="AccountQuickLink" href="">My account</a>
+            </div>
+        <!----------------------------------------------------------------------->
+        </div>
+        <!----------------------------------------------------------------------->
+        <div id="Login" class="Forms">
+            <input class="loginForms" type="name" placeholder="Username:" name="name" required pattern="\S+">
+            <input class="loginForms" type="password" placeholder="Password:" name="pass" required pattern="\S+">
+        </div>
+        <!----------------------------------------------------------------------->
+        <button id="SubmitLogin" class="submit" type="submit" style="text-transform:uppercase;">Enter</button>
+        <!----------------------------------------------------------------------->
+        <!-----<div id = "YellowShadow" class="shadow"></div>------>
+        <!----------------------------------------------------------------------->
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class = "Footer">  
+        <!--------------------------------------------------------------------------------------------------------->    
+        <img id = "LogoText" src="img/KifssLogo.png" alt="KIFSS logo">
+        <!--------------------------------------------------------------------------------------------------------->   
+            <div class = "ContactInfo">
+                <ul>
+                    <li class="Contacts">Contact Us:</li>
+                    <li class="Contacts">Business enquiries → alex@kifss.co.uk</li>
+                    <li class="Contacts">Technical enquiries → ashley@kifss.co.uk</li>
+                    <li class="Contacts">© KIFSS 2022</li>
+                </ul>
+            </div>
+        <!-------------------------------------------------------------------------------------------------------->    
+        <div class = "SocialLinks">
+                
+                <div id = "Instagram" class="SocialBox" >
+                    <img id="InstaIcon" class="Icons" src="img/instagram.png" alt="instagram icon">
+                </div>
+            <!----------------------------------------------------------------------------------------->        
+                <div id = "Twitter" class="SocialBox" >
+                    <img id="TwitterIcon" class="Icons" src="img/twitter.png" alt="twitter icon">
+                </div>
+            <!----------------------------------------------------------------------------------------->            
+                <div id = "Youtube" class="SocialBox" >
+                    <img id="YouTubeIcon" class="Icons" src="img/linkedin.png" alt="linkedin icon">
+                </div>
+            <!----------------------------------------------------------------------------------------->                
+                <div id = "Facebook" class="SocialBox" >
+                <img id="FbIcon" class="Icons" src="img/facebook.png" alt="facebook icon">
+                </div>
+            
+            </div>
+        <!---------------------------------------------------------------------------------------------------------->    
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/LoginPage.js"></script>
+
+</html>
+
