@@ -19,6 +19,5 @@ app.set('view engine', 'ejs')
 app.get('/LoginPage', (req, res) => {
     res.render('LoginPage')
 })
-
 //Listen on prt 8080
 app.listen(8080)
